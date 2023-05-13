@@ -1,0 +1,5 @@
+<launch>
+    <node name="UFO_detector_node" pkg="ufo_detector" type="UFO_detector_node.py" output="screen" />   
+    <node name="Attack_node" pkg="ufo_detector" type="attack_object.py" output="screen" />   
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ufo_detector)/rviz/simple.rviz" required="true" output="screen"/>  
+</launch> 
